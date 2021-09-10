@@ -1,0 +1,123 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --beige: #f5ebda;
+  --white: #ffffff;
+
+  /*navigationsfarven */
+  --navfarve:#brown;
+
+  }
+
+  /* fonte */
+}
+/**google fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/*bruges sådan:font-family: 'Abril Fatface', cursive;*/
+
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: #beige;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface';
+  color: #a8997e;
+}
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Layout */
+
+/* Typografi */
+h2 {
+  border-bottom: 2px solid var(--blue);
+color: var(--white);
+  background-color: #f5ebda;
+  text-align: center;
+  font-family: 'Abril Fatface';
+
+
+
+}
+
+nav,{
+  background-color: var(--navfarve);
+  color: var(--white);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: 'Abril Fatface';
+
+
+
+}
+
+/* links */
+a{
+  color: #f5ebda;
+  text-decoration: none; /*fjerner eks streg under text*/
+}
+a:hover{ /*når man sætter musen over kommer der en ny farve omkring menupunkterne*/
+  background-color: red;
+
+}
+
+ul{
+  list-style-type:none; /*--fjerner bullets*/
+}
+nav ul li{ /*her vælger vi at det er bullets der skal ændres*/
+  display: inline; /*nu bliver menuen vandret*/
+}
+
+/*her ændrer jeg hvordan min l liste skal se ud, jeg skriver .l fordi jeg har kaldt listen l inde i html. punktum står for class. */
+.l li{
+  color: #f5ebda;
+}
+/*tekstbredde*/
+p{
+  width:600px;
+}
+
+h2{
+  width:500px;
+  padding:4px; /*bredden på overskriftens box*/
+}
+
+p{
+  margin-top: 37px; /*afstand mellem text og h2 og p*/
+}
+
+/*wrap går rundt om alle elementer, der står id bag ved wrap så derfor skal # på*/
+#wrap {
+  width: 650px;
+  margin:auto; /*stiller det i midten*/
+}
+
+figure{
+  height:350px;
+  width:450px;
+  overflow:auto;
+
+}
+
+figure img {
+  width: 500%
+}
+
+.Galleri figure {
+
+}
+
+/*sådan kommer du ud af mappe, så den kan se alle*/
+body{
+
+  background-image: url('../images/ha.gif')
+}
